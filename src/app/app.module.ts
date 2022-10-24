@@ -1,14 +1,14 @@
-import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+import { GuardModule } from '@authing/ng-ui-components';
 
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { GuardModule, AuthingGuardModule } from '@authing/ng-ui-components';
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, AppRoutingModule, GuardModule],
+  imports: [BrowserModule, GuardModule],
   providers: [],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
+

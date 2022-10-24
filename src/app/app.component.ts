@@ -3,29 +3,45 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.less'],
+  // styleUrls: ['./app.component.less'],
 })
 export class AppComponent {
-  title = 'Authing';
+  // title = 'demo';
+  // visible = true;
+  appId = '5f6265c67ff6fdae64ec516e';
+  // config = {
+  //   // target: '#authing_guard_container',
+  //   mode: 'modal',
+  //   // apiHost: 'https://lb68p7-demo.authing.cn',
+  //   // loginMethods: Object.values(LoginMethods),
+  //   // logo:
+  //   //   'https://files.authing.co/user-contents/photos/0a4c99ff-b8ce-4030-aaaf-584c807cb21c.png',
+  //   // title: 'Authing',
+  //   // defaultLoginMethod: LoginMethods.LDAP,
+  //   // registerMethods: Object.values(RegisterMethods),
+  //   // defaultRegisterMethod: RegisterMethods.Email,
+  //   // defaultScenes: GuardModuleType.LOGIN,
+  //   // socialConnections: Object.values(SocialConnections),
+  //   // enterpriseConnections: ["oidc1"],
+  //   // autoRegister: true,
+  // };
 
-  appId = '5d70d0e991fdd597019df70d';
+  // onLoad(e: AuthenticationClient): void {
+  //   console.log('ffffff', e);
+  // }
 
-  visible = true;
+  // onLoginError([msg]: [
+  //   msg: CommonMessage,
+  //   client: AuthenticationClient
+  // ]): void {
+  //   console.log(msg);
+  // }
 
-  onLoad() {
-    console.log(this.visible, '加载了');
-  }
+  // onClose(): void {
+  //   this.visible = false;
+  // }
 
-  onClose() {
-    this.visible = false;
-
-    console.log('关闭了');
-  }
-  config: any = {
-    mode: 'modal',
-  };
-
-  onLogin(event: any) {
-    console.log('登录了：', event);
-  }
+  // onLogin([user]: [User, AuthenticationClient]): void {
+  //   console.log('onLogin by Guard in Angular: ', user);
+  // }
 }

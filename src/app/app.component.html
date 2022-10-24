@@ -1,11 +1,4 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div>
-  <guard
-    (onLogin)="onLogin($event)"
-    [appId]="appId"
-    [config]="config"
-    [visible]="visible"
-    (onLoad)="onLoad()"
-    (onClose)="onClose()"
-  ></guard>
+<div id="authing_guard_container">
+  <guard [appId]="appId"></guard>
 </div>
